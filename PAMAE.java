@@ -96,7 +96,7 @@ public final class PAMAE {
 	}
 	
 	/**
-	 * Phase I of PAMAE algorithm : parallel refinement
+	 * Phase II of PAMAE algorithm : parallel refinement
 	 * @param sc
 	 * @param dataSet
 	 * @param bestSeed
