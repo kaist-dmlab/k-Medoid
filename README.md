@@ -9,7 +9,7 @@ Covertype - https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv<br />
 Census1990 - https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv<br />
 Cosmo50 - <br />
 TeraClickLog150 - https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv<br />
-                - https://dmlabdata.blob.core.windows.net/kmedoid/split_2.csv<br />
+<br > - https://dmlabdata.blob.core.windows.net/kmedoid/split_2.csv<br />
                 - https://dmlabdata.blob.core.windows.net/kmedoid/split_3.csv<br />
                 - https://dmlabdata.blob.core.windows.net/kmedoid/split_4.csv<br />
                 - https://dmlabdata.blob.core.windows.net/kmedoid/split_5.csv<br />            
