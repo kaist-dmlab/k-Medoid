@@ -7,3 +7,6 @@ To compile this algorithm, you should import the external libary for spark and m
 Our four real dataset can be downloaded below link
 
 CoverType - https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv
+Census1990 - https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv
+Cosmo50 - 
+TeraClickLog150 - 
