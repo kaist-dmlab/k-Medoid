@@ -5,8 +5,3 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 To compile this algorithm, you should import the external libary for spark and make jar file using IDE tools. You can download the library on this URL(http://spark.apache.org/). After that, you can run the algorithm using spark-submit script. 
 
 Our four real dataset can be downloaded below link
-
-CoverType - https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv
-Census1990 - https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv
-Cosmo50 - 
-TeraClickLog150 - 
