@@ -13,7 +13,7 @@ https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv<br />
 https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv<br />
 4. TeraClickLog150 <br />
 https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv<br />
+https://dmlabdata.blob.core.windows.net/kmedoid/split_1.csv<br />
 https://dmlabdata.blob.core.windows.net/kmedoid/split_2.csv<br />
 https://dmlabdata.blob.core.windows.net/kmedoid/split_3.csv<br />
-https://dmlabdata.blob.core.windows.net/kmedoid/split_4.csv<br />
-https://dmlabdata.blob.core.windows.net/kmedoid/split_5.csv<br />            
+https://dmlabdata.blob.core.windows.net/kmedoid/split_4.csv<br />            
