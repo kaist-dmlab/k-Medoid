@@ -36,7 +36,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 [link3]: https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv
 [link4]: https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv
 
-##4. Experiment Procedures
+##4. How to run
 - Compilation
  - To compile the algorithms, the spark-assembly library is needed. It can be downloaded from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
@@ -88,7 +88,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (f) PAMAE-Hadoop/Spark</br>
 
- ##6. Experiment Detail
+ ##6. Experiment Procedure
  
 
 
