@@ -12,13 +12,16 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - **PAMAE-Spark** : Spark implementation of our algorithm
 
 ##3. Data Sets
-| Name             | # Object       | # Dim    | Size    | Type  |
-| :--------------- | :------------: | :------: |:-------:|:-----:|
-| Covertype [6]    | 581,102        | 55       | 71 MB   | int   |
-| Census1990 [6]   | 2,458,285      | 68       | 324 MB  | int   |
-| Cosmo50 [7]      | 315,086,245    | 3        | 13.6 GB | float |
-| TeraClickLog [8] | 4,373,472,329  | 13       | 300 GB  | float |
-
+| Name         | # Object       | # Dim    | Size    | Type  |  Link   |
+| :----------- | :------------: | :------: |:-------:|:-----:|:-------:|
+| Covertype    | 581,102        | 55       | 71 MB   | int   | [link1] |
+| Census1990   | 2,458,285      | 68       | 324 MB  | int   | [link2] |
+| Cosmo50      | 315,086,245    | 3        | 13.6 GB | float | [link3] |
+| TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link4] |
+[link1]: https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv
+[link2]: https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv
+[link3]: https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv
+[link4]: https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv
 
 ##x. Reference
 [1] Xianfeng Yang and Liming Lian. 2014. A New Data Mining Algorithm Based on MapReduce and Hadoop. Int’l J. of Signal Processing, Image Processing, and Pattern Recognition 7, 2 (2014), 131–142.</br>
