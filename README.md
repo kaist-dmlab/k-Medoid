@@ -51,7 +51,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
   <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]**</sup>
  - GREEDI</br>
   <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]**</sup>
- - MR-KMEDIAN (Iterative Sampling and Weighted K-Median)</br>
+ - MR-KMEDIAN</br>
   <sup>Iteraive Sampling </sup></br>
     <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]**</sup></br>
    <sup>Weighted K-Median </sup></br>
@@ -62,5 +62,6 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
   <sup>**spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
 - Example
  - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualized the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
- 
+ - The result images can be shown through below link. </br>
+  [PAM-MR](figures/example_dataset.png),[FAMES-MR](figures/example_dataset.png),[CLARA-MR](figures/example_dataset.png),[GREEDI](figures/example_dataset.png),[MR-KMEDIAN](figures/example_dataset.png),[PAMAE-Hadoop/Spark](figures/example_dataset.png)
 
