@@ -41,26 +41,24 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
-   -**cmd : hadoop dfs -put 'your master node path' 'hdfs path'**
+   <sup>**cmd : hadoop dfs -put 'your master node path' 'hdfs path'**</sup>
 - Running the algorithms
  - PAM-MR</br>
-  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**
+  <sup>**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**</sup>
  - FAMES-MR</br>
-  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**
+  <sup>**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**</sup>
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of samples' '# of medoids' 'type'**
+  <sup>**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of samples' '# of medoids' 'type'**</sup>
  - GREEDI</br>
-  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of partitions' '# of medoids'**
+  <sup>**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of partitions' '# of medoids'**</sup>
  - MR-KMEDIAN</br>
-  -**cmd : '**
+  <sup>**cmd : '**</sup>
  - PAMAE-Hadoop</br>
-  -**cmd : '**
+  <sup>**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of sampled objects' '# of samples' '# of partition'**</sup>
  - PAMAE-Spark</br>
   -**cmd : '**
-
+ 
   
   
  
-
-
 
