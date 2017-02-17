@@ -40,9 +40,12 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
- - Transfer your dataset from Azure master node into _HDFS_.</br>
+ - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
    **command : hadoop -dfs put 'your-master-node-path' 'hdfs-path'**
-   
+- Running the algorithms
+ - Hadoop</br>
+ - Spark</br>
+ 
 
 
 
