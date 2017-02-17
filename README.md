@@ -64,9 +64,11 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering result images are shown through below links.** </br>
   <img src="figures/PAM-MR.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/CLARA-MR.png" width="250"></br>
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (a) PAM-MR 
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (b) FAMES-MR 
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (a) PAM-MR 
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </space> (b) FAMES-MR 
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (c) CLARA-MR</br>
   <img src="figures/GREEDI.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/PAMAE.png" width="250"></br>
