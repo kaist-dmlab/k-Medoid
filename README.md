@@ -63,5 +63,5 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Example
  - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualized the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering result images are shown through below links.** </br>
-  [PAM-MR](figures/example_dataset.png),   [FAMES-MR](figures/example_dataset.png),   [CLARA-MR](figures/example_dataset.png),   [GREEDI](figures/example_dataset.png),   [MR-KMEDIAN](figures/example_dataset.png),   [PAMAE-Hadoop/Spark](figures/example_dataset.png)
+  [PAM-MR](figures/PAM-MR.png),   [FAMES-MR](figures/example_dataset.png),   [CLARA-MR](figures/example_dataset.png),   [GREEDI](figures/GREEDI.png),   [MR-KMEDIAN](figures/example_dataset.png),   [PAMAE-Hadoop/Spark](figures/example_dataset.png)
 
