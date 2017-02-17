@@ -44,9 +44,9 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
    **cmd : hadoop dfs -put 'your master node path' 'hdfs path'**
 - Running the algorithms
  - PAM-MR
-  -**cmd : dd**
+  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  -**cmd : hadoop jar 'jar-file' 'main class' 'hdfs input path' 'hdfs-output-path' '# of sample' '# of cluster' 'type'**
+  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of samples' '# of medoids' 'type'**
   
   
  
