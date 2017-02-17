@@ -11,7 +11,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - **PAMAE-Hadoop** : Hadoop implementation of our algorithm
 - **PAMAE-Spark** : Spark implementation of our algorithm
 
->*_Reference_*</br>
+>_Reference_</br>
 [1] Xianfeng Yang and Liming Lian. 2014. A New Data Mining Algorithm Based on MapReduce and Hadoop. Int’l J. of Signal Processing, Image Processing, and Pattern Recognition 7, 2 (2014), 131–142.</br>
 [2] Ying-ting Zhu, Fu-zhang Wang, Xing-hua Shan, and Xiao-yan Lv. 2014. KMedoids Clustering Based on MapReduce and Optimal Search of Medoids. In Proc. 9th Int’l Conf. on Computer Science and Education. 573–577.</br>
 [3] Pelle Jakovits and Satish Narayana Srirama. 2013. Clustering on the Cloud: Reducing CLARA To MapReduce. In Proc. 2nd Nordic Sympo. on Cloud Computing and Internet Technologies. 64–71.</br>
@@ -29,5 +29,20 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 [link2]: https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv
 [link3]: https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv
 [link4]: https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv
+
+##4. Experiment Procedures
+- Compilation
+ - To compile the algorithms, we should import the spark-assembly library which can be downloaded from [link5]. 
+[link5]: http://spark.apache.org/downloads.html
+ - Make jar file using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from each algorithm folder.
+- Creating Azure HDInsight instances
+ - see [HDInsight Document]
+ [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
+- Move the data sets into HDFS folder.
+ - Download all datasets from above links and move it to the Azure master node.
+ - Transfer your dataset from Azure master node into HDFS.</br>
+   **command : hadoop -dfs put 'your-master-node-path' 'hdfs-path'**
+   
+
 
 
