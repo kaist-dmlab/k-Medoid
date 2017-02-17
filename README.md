@@ -60,23 +60,8 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ##5. Example
  - The [example_dataset.csv](example/example_dataset.csv) file is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering results are shown in below figures.** </br>
-  <img src="figures/PAM-MR.png" width="250"> <img src="figures/FAMES-MR.png" width="250"> <img src="figures/CLARA-MR.png" width="250"></br>
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (a) PAM-MR 
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- </space> (b) FAMES-MR 
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (c) CLARA-MR</br>
- <img src="figures/GREEDI.png" width="250"> <img src="figures/MR-KMEDIAN.png" width="250"> <img src="figures/PAMAE.png" width="250">    </br>
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (d) GREEDI
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- </space> (e) MR-KMEDIAN 
- <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (f) PAMAE-Hadoop/Spark</br>
+  <img src="figures/FIG-PAM-MR.png" width="250"> <img src="figures/FIG-FAMES-MR.png" width="250"> <img src="figures/FIG-CLARA-MR.png" width="250"></br>
+ <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250">   
 
  ##6. Experiment Procedure
  
