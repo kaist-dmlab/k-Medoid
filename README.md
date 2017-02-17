@@ -62,7 +62,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - **The clustering results are shown in below figures.** </br>
   <img src="figures/FIG-PAM-MR.png" width="250"> <img src="figures/FIG-FAMES-MR.png" width="250"> <img src="figures/FIG-CLARA-MR.png" width="250"></br>
  <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250"></br>
- Here, we can easily observe that other approaches suffers from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
+ Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
  ##6. Experiment Procedure
  - Sampling error experiment (Figure 6)
