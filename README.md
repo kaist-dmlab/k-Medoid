@@ -11,8 +11,8 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - **PAMAE-Hadoop** : Hadoop implementation of our algorithm
 - **PAMAE-Spark** : Spark implementation of our algorithm
 
-*_Reference_*</br>
->[1] Xianfeng Yang and Liming Lian. 2014. A New Data Mining Algorithm Based on MapReduce and Hadoop. Int’l J. of Signal Processing, Image Processing, and Pattern Recognition 7, 2 (2014), 131–142.</br>
+>*_Reference_*</br>
+[1] Xianfeng Yang and Liming Lian. 2014. A New Data Mining Algorithm Based on MapReduce and Hadoop. Int’l J. of Signal Processing, Image Processing, and Pattern Recognition 7, 2 (2014), 131–142.</br>
 [2] Ying-ting Zhu, Fu-zhang Wang, Xing-hua Shan, and Xiao-yan Lv. 2014. KMedoids Clustering Based on MapReduce and Optimal Search of Medoids. In Proc. 9th Int’l Conf. on Computer Science and Education. 573–577.</br>
 [3] Pelle Jakovits and Satish Narayana Srirama. 2013. Clustering on the Cloud: Reducing CLARA To MapReduce. In Proc. 2nd Nordic Sympo. on Cloud Computing and Internet Technologies. 64–71.</br>
 [4] Baharan Mirzasoleiman, Amin Karbasi, Rik Sarkar, and Andreas Krause. 2013. Distributed Submodular Maximization: Identifying Representative Elements in Massive Data. In Proc. 27th Annual Conf. on Neural Information Processing Systems. 2049–2057.</br>
