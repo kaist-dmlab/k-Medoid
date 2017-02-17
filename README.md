@@ -12,12 +12,12 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - **PAMAE-Spark** : Spark implementation of our algorithm
 
 ##3. Data Sets
-| Name             | # Object       | # Dim    | Size    |
-| :--------------- | :------------: | :------: |:-------:|
-| Covertype [6]    | 581,102        | 55       | 71 MB   |
-| Census1990 [6]   | 2,458,285      | 68       | 324 MB  |
-| Cosmo50 [7]      | 315,086,245    | 3        | 13.6 GB |
-| TeraClickLog [8] | 4,373,472,329  | 13       | 300 GB  |
+| Name             | # Object       | # Dim    | Size    | Type  |
+| :--------------- | :------------: | :------: |:-------:|:-----:|
+| Covertype [6]    | 581,102        | 55       | 71 MB   | int   |
+| Census1990 [6]   | 2,458,285      | 68       | 324 MB  | int   |
+| Cosmo50 [7]      | 315,086,245    | 3        | 13.6 GB | float |
+| TeraClickLog [8] | 4,373,472,329  | 13       | 300 GB  | float |
 
 
 ##x. Reference
