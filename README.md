@@ -64,8 +64,17 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering result images are shown through below links.** </br>
   <img src="figures/PAM-MR.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/CLARA-MR.png" width="250"></br>
-  (a) PAM-MR, (b) FAMES-MR, (c) CLARA-MR</br>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (a) PAM-MR 
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (b) FAMES-MR 
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (c) CLARA-MR</br>
   <img src="figures/GREEDI.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/PAMAE.png" width="250"></br>
-  (d) GREEDI, (e) MR-KMEDIAN, (f) PAMAE-Hadoop/Spark
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (d) GREEDI
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (e) MR-KMEDIAN 
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (f) PAMAE-Hadoop/Spark</br>
+   
 
 
