@@ -49,7 +49,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]``**
  - MR-KMEDIAN</br>
   Iteraive Sampling</br>
-    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]``**</br>
+    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [# of objects]``**</br>
    Weighted K-Median </br>
     **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs sample path] [hdfs output path] [# of medoids] [# of cores]``**
  - PAMAE-Hadoop</br>
