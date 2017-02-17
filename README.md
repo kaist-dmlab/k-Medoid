@@ -69,7 +69,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (c) CLARA-MR</br>
- <img src="figures/GREEDI.png" width="250"> <img src="figures/FAMES-MR.png" width="250"> <img src="figures/PAMAE.png" width="250">    </br>
+ <img src="figures/GREEDI.png" width="250"> <img src="figures/MR-KMEDIAN.png" width="250"> <img src="figures/PAMAE.png" width="250">    </br>
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (d) GREEDI
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
