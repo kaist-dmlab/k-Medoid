@@ -65,16 +65,16 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - **The clustering result images are shown through below links.** </br>
   <img src="figures/PAM-MR.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/CLARA-MR.png" width="250"></br>
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (a) PAM-MR 
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (b) FAMES-MR 
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (c) CLARA-MR</br>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (b) FAMES-MR 
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (c) CLARA-MR</br>
   <img src="figures/GREEDI.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/PAMAE.png" width="250"></br>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (d) GREEDI
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (e) MR-KMEDIAN 
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (f) PAMAE-Hadoop/Spark</br>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (d) GREEDI
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (e) MR-KMEDIAN 
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space>
+ <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</space> (f) PAMAE-Hadoop/Spark</br>
    
 
 
