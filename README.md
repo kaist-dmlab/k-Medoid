@@ -21,10 +21,10 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ##3. Data Sets
 | Name         | # Object       | # Dim    | Size    | Type  |  Link   |
 | :----------- | :------------: | :------: |:-------:|:-----:|:-------:|
-| Covertype    | 581,102        | 55       | 71 MB   | int   | [link]:https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv |
-| Census1990   | 2,458,285      | 68       | 324 MB  | int   | [link]:https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv |
-| Cosmo50      | 315,086,245    | 3        | 13.6 GB | float | [link]:https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv |
-| TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link]:https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv |
+| Covertype    | 581,102        | 55       | 71 MB   | int   | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv)|
+| Census1990   | 2,458,285      | 68       | 324 MB  | int   | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv)|
+| Cosmo50      | 315,086,245    | 3        | 13.6 GB | float | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv)|
+| TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link](https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv)|
 
 ##4. How to run
 - Compilation
