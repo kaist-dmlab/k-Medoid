@@ -44,7 +44,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
    <sup>**cmd : hadoop dfs -put 'your master node path' 'hdfs path'**</sup>
 - Command for execution of algorithms
  - PAM-MR</br>
-  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
+  <sup>``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``</sup>
  - FAMES-MR</br>
   <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
@@ -61,10 +61,11 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - PAMAE-Spark</br>
   <sup>**spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
 - Example
- - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualized the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
+ - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering result images are shown through below links.** </br>
   <img src="figures/PAM-MR.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/CLARA-MR.png" width="250"></br>
-  <center>[PAM-MR](figures/PAM-MR.png),  [FAMES-MR](figures/FAMES-MR.png),   [CLARA-MR](figures/CLARA-MR.png)</center></br>
+  <br><br><br><br><br><br>(a) PAM-MR, (b) FAMES-MR, (c) CLARA-MR</br>
   <img src="figures/GREEDI.png" width="250">, <img src="figures/FAMES-MR.png" width="250">, <img src="figures/PAMAE.png" width="250"></br>
-   <center>[GREEDI](figures/GREEDI.png),[MR-KMEDIAN](figures/MR-KMEDIAN.png),[PAMAE-Hadoop/Spark](figures/PAMAE.png)</center>
+  (d) GREEDI, (e) MR-KMEDIAN, (f) PAMAE-Hadoop/Spark
+
 
