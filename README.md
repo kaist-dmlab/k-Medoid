@@ -34,20 +34,30 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Compilation
  - To compile the algorithms, the spark-assembly library is needed. It can be downloaded from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
- - Make _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from each algorithm folder.
+ - Make _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from example folder.
 - Creating _Azure HDInsight_ instances
  - see [HDInsight Document]
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
-   **cmd : hadoop dfs -put 'your master node path' 'hdfs path'**
+   -**cmd : hadoop dfs -put 'your master node path' 'hdfs path'**
 - Running the algorithms
  - PAM-MR</br>
   -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**
+ - FAMES-MR</br>
+  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of medoids'**
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
   -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of samples' '# of medoids' 'type'**
-  
+ - GREEDI</br>
+  -**cmd : hadoop jar 'jar file' 'main class' 'hdfs input path' 'hdfs output path' '# of partitions' '# of medoids'**
+ - MR-KMEDIAN</br>
+  -**cmd : '**
+ - PAMAE-Hadoop</br>
+  -**cmd : '**
+ - PAMAE-Spark</br>
+  -**cmd : '**
+
   
   
  
