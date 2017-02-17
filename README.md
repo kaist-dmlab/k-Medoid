@@ -74,7 +74,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
  <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (e) MR-KMEDIAN 
  <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
- <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (f) PAMAE-Hadoop/Spark</br>
+ <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> (f) PAMAE-Hadoop/Spark</br>
    
 
 
