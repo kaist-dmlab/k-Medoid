@@ -41,10 +41,14 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
-   **command : hadoop -dfs put 'your-master-node-path' 'hdfs-path'**
+   **cmd : hadoop dfs -put 'your master node path' 'hdfs path'**
 - Running the algorithms
- - Hadoop</br>
- - Spark</br>
+ - PAM-MR
+  -**cmd : dd**
+ - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
+  -**cmd : hadoop jar 'jar-file' 'main class' 'hdfs input path' 'hdfs-output-path' '# of sample' '# of cluster' 'type'**
+  
+  
  
 
 
