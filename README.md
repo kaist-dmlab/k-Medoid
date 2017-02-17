@@ -58,7 +58,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
   **``spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**
   
 ##5. Example
- - The [example_dataset.csv](example/example_dataset.csv) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
+ - The [example_dataset.csv](example/example_dataset.csv) file is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering results are shown in below figures.** </br>
   <img src="figures/PAM-MR.png" width="250"> <img src="figures/FAMES-MR.png" width="250"> <img src="figures/CLARA-MR.png" width="250"></br>
  <space>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
