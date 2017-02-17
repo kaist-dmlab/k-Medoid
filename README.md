@@ -48,7 +48,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - FAMES-MR</br>
   <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] 'type'**</sup>
+  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]**</sup>
  - GREEDI</br>
   <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]**</sup>
  - MR-KMEDIAN</br>
@@ -56,9 +56,8 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - PAMAE-Hadoop</br>
   <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]**</sup>
  - PAMAE-Spark</br>
-  -**cmd : '**
- 
-  
+  <sup>**cmd : spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
+
   
  
 
