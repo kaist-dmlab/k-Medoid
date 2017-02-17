@@ -64,9 +64,9 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250">   
 
  ##6. Experiment Procedure
- - Sampling Error Experiment (Figure 6)
- - Accuracy and Efficiency Experiment (Figure 5 and 7)
- - Convergence Experiment (Figure 8)
- - Scalability Experiment (Figure 9)
+ - Sampling error experiment (Figure 6)
+ - Accuracy and efficiency experiment (Figure 5 and 7)
+ - Convergence experiment (Figure 8)
+ - Scalability experiment (Figure 9)
 
 
