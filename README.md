@@ -46,20 +46,20 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - PAM-MR</br>
   <sup>``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``</sup>
  - FAMES-MR</br>
-  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
+  <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]''</sup>
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]**</sup>
+  <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]''</sup>
  - GREEDI</br>
-  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]**</sup>
+  <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]''</sup>
  - MR-KMEDIAN</br>
   <sup>Iteraive Sampling </sup></br>
-    <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]**</sup></br>
+    <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]''</sup></br>
    <sup>Weighted K-Median </sup></br>
-    <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [# of cores]**</sup>
+    <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [# of cores]''</sup>
  - PAMAE-Hadoop</br>
-  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]**</sup>
+  <sup>''hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]''</sup>
  - PAMAE-Spark</br>
-  <sup>**spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
+  <sup>''spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]''</sup>
 - Example
  - The [example_dataset.csv](figures/example_dataset.png) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
  - **The clustering result images are shown through below links.** </br>
