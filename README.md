@@ -37,25 +37,25 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
-   <sup>**``hadoop dfs -put [your master node path] [hdfs path]``**</sup>
+   **``hadoop dfs -put [your master node path] [hdfs path]``**
 - Running algirithm using command
  - PAM-MR</br>
-  <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**</sup>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
  - FAMES-MR</br>
-  <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**</sup>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]``**</sup>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]``**
  - GREEDI</br>
-  <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]``**</sup>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]``**
  - MR-KMEDIAN</br>
   <sup>Iteraive Sampling </sup></br>
-    <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]``**</sup></br>
+    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]``**</br>
    <sup>Weighted K-Median </sup></br>
-    <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [# of cores]``**</sup>
+    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [# of cores]``**
  - PAMAE-Hadoop</br>
-  <sup>**``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]``**</sup>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]``**
  - PAMAE-Spark</br>
-  <sup>**``spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**</sup>
+  **``spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**
   
 ##5. Example
  - The [example_dataset.csv](example/example_dataset.csv) file in _example folder_ is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects.
