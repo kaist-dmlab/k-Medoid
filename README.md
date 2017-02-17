@@ -42,21 +42,24 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
    <sup>**cmd : hadoop dfs -put 'your master node path' 'hdfs path'**</sup>
-- Running the algorithms
+- Command for execution of algorithms
  - PAM-MR</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
+  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
  - FAMES-MR</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
+  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]**</sup>
  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]**</sup>
+  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]**</sup>
  - GREEDI</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]**</sup>
- - MR-KMEDIAN</br>
-  <sup>**cmd : '**</sup>
+  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]**</sup>
+ - MR-KMEDIAN (Iterative Sampling and Weighted K-Median)</br>
+  -Iteraive Sampling</br>
+    <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [data size]'**</sup></br>
+  -Weighted K-Median</br>
+    <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [# of cores]'**</sup>
  - PAMAE-Hadoop</br>
-  <sup>**cmd : hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]**</sup>
+  <sup>**hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]**</sup>
  - PAMAE-Spark</br>
-  <sup>**cmd : spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
+  <sup>**spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]**</sup>
 
   
  
