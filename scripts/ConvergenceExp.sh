@@ -4,7 +4,7 @@ do
 	for i in {1..5}
 	do
 		#CLAAR-MR' (40+2k,5)
-		echo "spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 140 5 40 10 > CONVERGENCE/CLARA-MR-prime/$dataset/$i"
+		echo "spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 140 5 40 10 > CONVERGENCE/CLARA-MR-PRIME/$dataset/$i"
 		spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 140 5 40 10 > CONVERGENCE/CLARA-MR-prime/$dataset/$i
 		#CLARA-MR (100+5k,5)
 		echo "spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 350 5 40 10 > CONVERGENCE/CLARA-MR/$dataset/$i"
