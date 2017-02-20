@@ -78,8 +78,11 @@ The shell(.sh) scripts for our experiments are included in [scripts](scripts).
   - Run all algorithms on the four real datasets when k is set to be 10,25, and 50.
   - The results are [Figure 5](figures/figure_5.png) and [Figure 8](figures/figure_8.png) in paper.
  - Convergence experiment (Figure 7)
-  - This experiment is to verify the convergence of Phase II increasing the number of iterations from 1 to 10 when k is 50.
-  - Three different seeding strategies are used : (40+2k,5) by CLARA-MR'; (100+5K) by CLARA-MR; and (40K,5) by Phase I of PAMAE.
+  - This experiment is to verify the convergence of Phase II.
+  - Three different seeding strategies are used.</br>
+    (40+2k,5) by CLARA-MR'; (100+5K) by CLARA-MR; and (40K,5) by Phase I of PAMAE.
+  - The number of iterations for Phase II is forced to increase from 1 to 10 when k is 50.
+  - The results are [Figure 7](figures/figure_7.png) in paper.
  - Scalability experiment (Figure 9)
   - ddd
  - Sampling error experiment (Figure 6)
