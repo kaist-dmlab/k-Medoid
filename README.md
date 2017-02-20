@@ -62,7 +62,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - PAMAE-Hadoop</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]``**
  - PAMAE-Spark</br>
-  **``spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**
+  **``spark-submit --class [main class] [jar file] wasb://[hdfs address]/[hdfs input path] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**
   
 ##6. Example
  - The [example_dataset.csv](example/example_dataset.csv) file is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects. 
