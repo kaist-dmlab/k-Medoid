@@ -27,7 +27,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class MainDriver {
 	
-	private static final String ERR_TAG = "inputpath outputpath samplesize #_reducer #_medoids #_core";
+	private static final String ERR_TAG = "inputpath outputpath #_sampled_objs #_samples #_medoids #_core";
 	private static final String INIT_MEDOIDS_FOLDER = "firstOutput";
 	private static final String INIT_MEDOIDS_PATH = "suboutput/init_medoids";
 	private static final String FINAL_INIT_MEDOIDS = null;
@@ -54,10 +54,10 @@ public class MainDriver {
 			long start = System.currentTimeMillis();
 			
 			//get attrNum
-			//BufferedReader init_br = new BufferedReader(new InputStreamReader(fs.open(new Path(inputPath))));
-			//String line = init_br.readLine();
-			//String[] rl = line.split(",");
-			AttrNum = 13;//rl.length;
+			BufferedReader init_br = new BufferedReader(new InputStreamReader(fs.open(new Path(inputPath))));
+			String line = init_br.readLine();
+			String[] rl = line.split(",");
+			AttrNum = rl.length;
 			
 			System.out.println("attrNum : " + AttrNum);
 			//init_br.close();
