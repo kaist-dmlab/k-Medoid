@@ -25,9 +25,9 @@ public class MainDriver {
 	
 	public static void main(String[] args) throws IOException
 	{
-		if(args.length != 5)
+		if(args.length != 6)
 		{	
-			System.out.println("Usage: PAMAE <Input Path> <# of Clusters> <# of Sampled Objects> <# of Sample> <# of Partition>");
+			System.out.println("Usage: PAMAE <Input Path> <# of Clusters> <# of Sampled Objects> <# of Sample> <# of Partition> <# of Iteration>");
 			System.exit(1);
 		}
 		
@@ -37,6 +37,7 @@ public class MainDriver {
 		int numOfSampledObjects = Integer.parseInt(args[2]);
 		int numOfSamples = Integer.parseInt(args[3]);
 		int numOfCores = Integer.parseInt(args[4]);
+		int numOfIteration = Integer.parseInt(args[5]);
 		
 		//set-up spark configuration
 		SparkConf sparkConf = new SparkConf().setAppName("PAMAE");
@@ -53,11 +54,21 @@ public class MainDriver {
 	   	List<FloatPoint> bestSeed = PAMAE.PHASE_I(sc, dataSet, numOfClusters, numOfSampledObjects, numOfSamples, numOfCores);
 		
 	    //Phase II (STEP 4 ~ STEP 5) : Parallel Refinement
-		List<FloatPoint> finalMedoids = PAMAE.PHASE_II(sc, dataSet, bestSeed, numOfClusters, numOfSampledObjects, numOfSamples, numOfCores);
-		
-		double finalError = PAMAE.FinalError(sc, dataSet, finalMedoids);
-		bw.write("CLUSTERING ERROR : " + finalError +"\n");
-		
+	   	//iteration
+	   	List<FloatPoint> finalMedoids=null;
+	   	for(int i=0; i<numOfIteration; i++)
+	   	{
+	   		finalMedoids = PAMAE.PHASE_II(sc, dataSet, bestSeed, numOfClusters, numOfSampledObjects, numOfSamples, numOfCores);
+	   		
+	   		//set new class label for next iteration
+	   		for(int j=0; j<finalMedoids.size(); j++)
+	   			finalMedoids.get(j).setClassLabel(j);
+	   		bestSeed = finalMedoids;   		
+	   		
+	   		double finalError = PAMAE.FinalError(sc, dataSet, finalMedoids);
+			bw.write("["+(i+1)+" iter] CLUSTERING ERROR : " + finalError +"\n");
+	   	}
+	   	
 		bw.write("FINAL K MEDOIDS\n");
 	    for(int i=0; i<finalMedoids.size(); i++)
 	    	bw.write(finalMedoids.get(i).toString()+"\n");  
