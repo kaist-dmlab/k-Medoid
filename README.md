@@ -88,8 +88,7 @@ The shell(.sh) scripts for our experiments are included in [scripts](scripts).
   - Two storage-level options are used.</br>
     MEMORY_ONLY and MEMORY_AND_DISK
   - The result is [Figure 9](figures/figure_9.pdf) in paper. 
- - Sampling error experiment (Figure 6)
-  - ddd
+
  
 
 
