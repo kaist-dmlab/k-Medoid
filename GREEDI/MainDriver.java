@@ -25,7 +25,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class MainDriver {
 	
-	private static final String ERR_TAG = "inputpath outputpath #_reducer #_medoids";
+	private static final String ERR_TAG = "inputpath outputpath #_parition #_medoids";
 	private static final String INIT_MEDOIDS_PATH = "suboutput/init_medoids";
 	private static final String splitter = ",";
 	private static String inputPath, outputPath, NumOfReducer, NumOfMedoids;
