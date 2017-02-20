@@ -5,7 +5,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ##2. Algorithms
 - PAM-MR [1]
 - FAMES-MR [2]
-- CLARA-MR' and CLARA-MR' [3]
+- CLARA-MR' and CLARA-MR [3]
 - GREEDI [4]
 - MR-KMEDIAN [5]
 - **PAMAE-Hadoop** : Hadoop implementation of our algorithm
@@ -34,18 +34,18 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - All the algorithms were written in the Java programming language and run on JDK 1.7.0_101.
 
 ##5. How to run
-- Compilation
+- Compile
  - To compile the algorithms, the spark-assembly library is needed. It can be downloaded from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
  - Make _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from example folder.
-- Creating _Azure HDInsight_ instances
+- Create _Azure HDInsight_ instances
  - see [HDInsight Document]
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
 - Moving the data sets into _HDFS_ folder.
  - Download all datasets from above links and move it to the _Azure master node_.
  - Transfer your dataset from _Azure master node_ into _HDFS_.</br>
    **``hadoop dfs -put [your master node path] [hdfs path]``**
-- Running algirithm using command
+- Run algirithms using command
  - PAM-MR</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
  - FAMES-MR</br>
@@ -80,11 +80,14 @@ The shell(.sh) scripts for our experiments are included in [scripts](scripts).
  - Convergence experiment (Figure 7)
   - This experiment is to verify the convergence of Phase II.
   - Three different seeding strategies are used.</br>
-    (40+2k,5) by CLARA-MR'; (100+5K) by CLARA-MR; and (40K,5) by Phase I of PAMAE.
+    (40+2k,5) by CLARA-MR', (100+5K) by CLARA-MR, and (40K,5) by Phase I of PAMAE.
   - The number of iterations for Phase II is forced to increase from 1 to 10 when k is 50.
-  - The results are [Figure 7](figures/figure_7.pdf) in paper.
+  - The result is [Figure 7](figures/figure_7.pdf) in paper.
  - Scalability experiment (Figure 9)
-  - ddd
+  - This experiment is scalability test using TeraClickLog dataset on Spark.
+  - Two storage-level options are used.</br>
+    MEMORY_ONLY and MEMORY_AND_DISK
+  - The result is [Figure 9](figures/figure_9.pdf) in paper. 
  - Sampling error experiment (Figure 6)
   - ddd
  
