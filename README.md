@@ -76,18 +76,18 @@ The script(.sh) files for our experiments are included in [scripts](scripts).
  - Accuracy and efficiency experiment
   - This experiment is accuracy/efficiency comparisons of eight parallel algorithms.
   - Run all algorithms on the four real datasets when k is set to be 10,25, and 50.
-  - The results are [Figure 5](figures/figure_5.pdf) and [Figure 8](figures/figure_8.pdf) in paper.
+  - The results are [Figure 5](figures/figure_5.pdf) and [Figure 8](figures/figure_8.pdf) in our paper.
  - Convergence experiment
   - This experiment is to verify the convergence of Phase II.
   - Three different seeding strategies are used.</br>
     (40+2k,5) by CLARA-MR', (100+5K) by CLARA-MR, and (40K,5) by Phase I of PAMAE.
   - The number of iterations for Phase II is forced to increase from 1 to 10 when k is 50.
-  - The result is [Figure 7](figures/figure_7.pdf) in paper.
+  - The result is [Figure 7](figures/figure_7.pdf) in our paper.
  - Scalability experiment
   - This experiment is scalability test using TeraClickLog dataset on Spark.
   - Two storage-level options are used.</br>
     MEMORY_ONLY and MEMORY_AND_DISK
-  - The result is [Figure 9](figures/figure_9.pdf) in paper. 
+  - The result is [Figure 9](figures/figure_9.pdf) in our paper. 
 
  
 
