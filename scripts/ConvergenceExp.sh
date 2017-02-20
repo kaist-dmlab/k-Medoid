@@ -11,7 +11,7 @@ do
 		spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 350 5 40 10 > CONVERGENCE/CLARA-MR/$dataset/$i
 		#PAMAE (40k,5)
 		echo "spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 2000 5 40 10 > CONVERGENCE/PPAMAE-Spark/$dataset/$i"
-		spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 2000 5 40 10 > CONVERGENCE/PPAMAE-Spark/$dataset/$i
+		spark-submit --class dmlab.main.MainDriver PAMAE-Spark.jar wasb://dmcluster@dmclusterstg.blob.core.windows.net/dataset/$dataset 50 2000 5 40 10 > CONVERGENCE/PAMAE-Spark/$dataset/$i
 	done
 done
 
