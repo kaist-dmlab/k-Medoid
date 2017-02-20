@@ -26,7 +26,14 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 | Cosmo50      | 315,086,245    | 3        | 13.6 GB | float | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv)|
 | TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link 1](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_1.csv),[2](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_2.csv),[3](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_3.csv)|
 
-##4. How to run
+##4. Configuration
+ - We conducted experiments on 12 Microsoft Azure D12v2 instances loacted in Japan. 
+ - Each instance has four cores, 28GB of main memory, and 200GB of disk(SSD). 
+ - All instances run on Ubuntu 14.04. We used Hadoop 2.7.1 and Spark 1.6.1 for distributed parallel processing. 
+ - Ten out of 12 instances were used as worker nodes, and the remaining two instances were used as master nodes. 
+ - All the algorithms were written in the Java programming language and run on JDK 1.7.0_101.
+
+##5. How to run
 - Compilation
  - To compile the algorithms, the spark-assembly library is needed. It can be downloaded from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
@@ -57,16 +64,16 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - PAMAE-Spark</br>
   **``spark-submit --class [main class] [jar file] wasb://[hdfs address] [# of medoids] [# of sampled objects] [# of samples] [# of partitions]``**
   
-##5. Example
+##6. Example
  - The [example_dataset.csv](example/example_dataset.csv) file is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects. 
  - **The clustering results are shown in below figures.** </br>
   <img src="figures/FIG-PAM-MR.png" width="250"> <img src="figures/FIG-FAMES-MR.png" width="250"> <img src="figures/FIG-CLARA-MR.png" width="250"></br>
  <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250"></br>
  Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
-##6. Experiment Procedure
+##7. Experiment Procedure
  - Accuracy and efficiency experiment (Figure 5 and 7)
-  - ddd
+  - We 
  - Convergence experiment (Figure 8)
   - ddd
  - Scalability experiment (Figure 9)
