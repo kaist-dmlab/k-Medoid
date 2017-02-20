@@ -25,7 +25,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 public class MainDriver {
 
 	//sPath hPath s_primePath rPath
-	private static final String ERR_TAG = "inputpath samplepath outputpath NumOfMedoids CoreSize";
+	private static final String ERR_TAG = "inputpath samplepath outputpath NumOfMedoids #_Core";
 	private static final String Splitter = ",";
 	private static final String mergePath = "suboutput/mergePath";
 	private static final String finalPath = "suboutput/finalPath";
