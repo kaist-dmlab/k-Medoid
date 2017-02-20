@@ -24,7 +24,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 | Covertype    | 581,102        | 55       | 71 MB   | int   | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Covertype.csv)|
 | Census1990   | 2,458,285      | 68       | 324 MB  | int   | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Census1990.csv)|
 | Cosmo50      | 315,086,245    | 3        | 13.6 GB | float | [link](https://dmlabdata.blob.core.windows.net/kmedoid/Cosmo50.csv)|
-| TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link](https://dmlabdata.blob.core.windows.net/kmedoid/split_0.csv)|
+| TeraClickLog | 4,373,472,329  | 13       | 300 GB  | float | [link 1](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_1.csv),[2](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_2.csv),[3](https://dmlabdata.blob.core.windows.net/kmedoid/TeraClickLog_3.csv)|
 
 ##4. How to run
 - Compilation
@@ -65,9 +65,14 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
 ##6. Experiment Procedure
- - Sampling error experiment (Figure 6)
  - Accuracy and efficiency experiment (Figure 5 and 7)
+  - ddd
  - Convergence experiment (Figure 8)
+  - ddd
  - Scalability experiment (Figure 9)
+  - ddd
+ - Sampling error experiment (Figure 6)
+  - ddd
+ 
 
 
