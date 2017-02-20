@@ -1,6 +1,6 @@
 #!/bin/bash
 size=0
-for dataset in "Covertype.csv" "Census1990.csv" "Cosmo50.csv" "TeraClickLog150"
+for dataset in "Covertype.csv" "Census1990.csv" "Cosmo50.csv" "TeraClickLog150.csv"
 do
 	if [ "$dataset" == "Covertype.csv" ]; then
 		size=581102
