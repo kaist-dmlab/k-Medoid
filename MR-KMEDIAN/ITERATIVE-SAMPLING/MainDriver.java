@@ -22,7 +22,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class MainDriver {
 
-	private static final String ERR_TAG = "inputpath outputpath NumOfMedoids Upsilon CoreSize DataSize";
+	private static final String ERR_TAG = "inputpath outputpath NumOfMedoids Epsilon #_core DataSize";
 	private static final String sPath = "suboutput/sPath";
 	private static final String hPath = "suboutput/hPath";
 	private static final String s_primePath = "suboutput/s_primePath";
@@ -39,7 +39,7 @@ public class MainDriver {
 		long start,end;
 		Configuration conf = initDriver(args);
 		try {
-			System.out.println("Iterative Sampling Start.");
+			//System.out.println("Iterative Sampling Start.");
 			start = System.currentTimeMillis();
 			
 			FileSystem fs = FileSystem.get(conf);
@@ -52,7 +52,7 @@ public class MainDriver {
 			String[] rl = line.split(",");
 			AttrNum = rl.length;
 			
-			System.out.println("attrNum : " + AttrNum);
+			//System.out.println("attrNum : " + AttrNum);
 			init_br.close();
 
 			conf.set("AttrNum", ""+AttrNum);
@@ -61,7 +61,7 @@ public class MainDriver {
 			double condition1 = (4.0/Double.parseDouble(Upsilon))*Double.parseDouble(NumOfMedoids)
 					*Math.pow(DataSize, Double.parseDouble(Upsilon))*Math.log(DataSize);
 		
-			System.out.println("While Condition: " + condition1);
+			//System.out.println("While Condition: " + condition1);
 			
 			while(DataSize > condition1)
 			{	
@@ -84,14 +84,14 @@ public class MainDriver {
 				
 				conf.set("DataSize", ""+DataSize);
 				
-				System.out.println("updated R size : " + DataSize);
+				//System.out.println("updated R size : " + DataSize);
 				
 			}
 			
-			System.out.println("");
+		    //System.out.println("");
 			end = System.currentTimeMillis();
-			System.out.println("time: "+(end-start)/1000.0 +" s");
-			System.out.println("");
+			//System.out.println("time: "+(end-start)/1000.0 +" s");
+			//System.out.println("");
 			
 			
 			String finalInput = null;
@@ -158,7 +158,7 @@ public class MainDriver {
 		CoreSize = args[4];
 		DataSize = Double.parseDouble(args[5]);
 		
-		System.out.println("Line Size : "+DataSize);
+		//System.out.println("Line Size : "+DataSize);
 		
 		
 		//conf set-up
@@ -276,12 +276,12 @@ public class MainDriver {
 			if(fs.exists(new Path(rPath)))
 			{
 				FileInputFormat.addInputPath(job, new Path(rPath));
-				System.out.println("rPath exist");
+				//System.out.println("rPath exist");
 			}
 			else
 			{
 				FileInputFormat.addInputPath(job, new Path(inputPath));
-				System.out.println("rPath not exist");
+				//System.out.println("rPath not exist");
 			}
 				
 			FileOutputFormat.setOutputPath(job, new Path(outputPath));
@@ -313,7 +313,7 @@ public class MainDriver {
 	 */
 	private static void mergeProcess(FileSystem fs) throws IOException
 	{
-		System.out.println("3]merge process start."); 
+		//System.out.println("3]merge process start."); 
 		fs.delete(new Path(sTemp));
 		fs.delete(new Path(hTemp));
 		
@@ -322,7 +322,7 @@ public class MainDriver {
 		FileStatus[] status = fs.listStatus(new Path(outputPath));
 
 		//flitering output files.
-		System.out.println("3]Merge first mapreduce output.");
+		//System.out.println("3]Merge first mapreduce output.");
 		
 		BufferedWriter s_bw = new BufferedWriter(new OutputStreamWriter(fs.create(new Path(sPath),true)));
 		BufferedWriter h_bw = new BufferedWriter(new OutputStreamWriter(fs.create(new Path(hPath),true)));
@@ -390,7 +390,7 @@ public class MainDriver {
 		s_bw.close();
 		h_bw.close();
 		
-		System.out.println("Merge step is complete.");
+		//System.out.println("Merge step is complete.");
 
 	}
 }
