@@ -67,8 +67,8 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ##6. Example
  - The [example_dataset.csv](example/example_dataset.csv) file is used to visualize the difference of six algorithms. The dataset consist of 10 clusters having 2D 10,000 objects. 
  - **The clustering results are shown in below figures.** </br>
-  <img src="figures/FIG-PAM-MR.png" width="250"> <img src="figures/FIG-FAMES-MR.png" width="250"> <img src="figures/FIG-CLARA-MR.png" width="250"></br>
- <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250"></br>
+ <img src="figures/FIG-PAM-MR.png" width="270"> <img src="figures/FIG-FAMES-MR.png" width="270"> <img src="figures/FIG-CLARA-MR.png" width="270"></br>
+ <img src="figures/FIG-GREEDI.png" width="270"> <img src="figures/FIG-MR-KMEDIAN.png" width="270"> <img src="figures/FIG-PAMAE.png" width="270"></br>
  Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
 ##7. Experiment
