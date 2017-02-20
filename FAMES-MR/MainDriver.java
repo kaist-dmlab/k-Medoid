@@ -24,10 +24,9 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class MainDriver {
 	
-	private static final String ERR_TAG = "inputpath outputpath #_reducer #_medoids [initMedoidPath]";
+	private static final String ERR_TAG = "inputpath outputpath #_medoids";
 	private static final String INIT_MEDOIDS_PATH = "suboutput/init_medoids";
-	private static String CUSTOM_INIT_PATH = "";
-	private static String inputPath, outputPath, NumOfBEReducer, NumOfMedoids;
+	private static String inputPath, outputPath, NumOfMedoids;
 	private static ArrayList<Point> dataSet = new ArrayList<Point>();
 	private static Point[] newPamInit = null;
 	private static Point[] beforePamInit = null;
@@ -70,7 +69,6 @@ public class MainDriver {
 			long end = System.currentTimeMillis();	
 			System.out.println("execution time : " + (end-start));
 		
-			summary();
 
 		} catch (Exception e) {
 			System.out.println("Job start error! \n"+e.getMessage());
@@ -78,21 +76,6 @@ public class MainDriver {
 	}
 
 	
-	/**
-	 * Result phase
-	 */
-	private static void summary()
-	{
-		System.out.println("----------------------------------------------"); 
-		System.out.println("output summary."); 
-		System.out.println("[1]init Point");
-		System.out.println(initMedoidsString);
-		System.out.println("[4]final medoids");
-		System.out.println(finalMedoidsString);
-
-		System.out.println("----------------------------------------------"); 			
-		
-	}
 	
 	/**
 	  * Driver initialization.
@@ -105,7 +88,7 @@ public class MainDriver {
 		Configuration conf = null;
 		
 		//init variable.
-		if(args.length < 4)
+		if(args.length < 3)
 		{
 			System.out.println(ERR_TAG);
 			System.exit(1);
@@ -113,19 +96,12 @@ public class MainDriver {
 
 		inputPath = args[0];
 		outputPath = args[1];
-		NumOfBEReducer = args[2];
-		NumOfMedoids = args[3];
-		
-		if(args.length >4)
-		{
-			CUSTOM_INIT_PATH = args[4];
-			System.out.println("custum init path : " + args[4]);
-		}
+		NumOfMedoids = args[2];
+
 		
 		//conf set-up
 		conf = new Configuration();
 		conf.set("InitPath", INIT_MEDOIDS_PATH);
-		conf.set("NumOfBEReducer", NumOfBEReducer);
 		conf.set("NumOfMedoids",NumOfMedoids);
 		conf.set("mapred.task.timeout","3600000");
 		conf.set("mapred.child.java.opts", "-Xmx25g -Xss1024m");
@@ -172,26 +148,11 @@ public class MainDriver {
 			
 			String initMedoidsString = "";
 
-			if(CUSTOM_INIT_PATH.compareTo("")!=0)
-			{
-				newPamInit = new Point[Integer.parseInt(NumOfMedoids)];
-				//Custom File Read.
-				BufferedReader br = new BufferedReader(new InputStreamReader(fs.open(new Path(CUSTOM_INIT_PATH))));
-				String init_line = "";
-				for(int i=0; i<Integer.parseInt(NumOfMedoids); i++)
-				{
-					init_line = br.readLine();
-					String[] toks = init_line.split(",");
-					Point pt = new Point(toks.length,i);
-					for(int j=0; j<toks.length; j++)
-						pt.getAttr()[j] = (Float.parseFloat(toks[j]));
-					newPamInit[i] = pt;
-				}
-			}else
-			{
-				//Random Initioal Point setting
-				newPamInit = chooseInitialMedoids(dataSet, Integer.parseInt(NumOfMedoids));
-			}
+
+			
+			//Random Initioal Point setting
+			newPamInit = chooseInitialMedoids(dataSet, Integer.parseInt(NumOfMedoids));
+			
 			
 
 			System.out.println("Set up completion.");

@@ -9,7 +9,6 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 public class FamesMapper extends Mapper<LongWritable, Text, Text, Text>{
 	private String initPath = "";
@@ -49,7 +48,6 @@ public class FamesMapper extends Mapper<LongWritable, Text, Text, Text>{
 			}
 			init_br.close();
 		} catch (IOException e) {
-			System.out.println("BestEffort Reducer InitReader error!");
 		}
 		
 	}
