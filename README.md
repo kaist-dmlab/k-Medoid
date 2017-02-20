@@ -72,7 +72,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
 ##7. Experiment
-Our shell scripts for all our experiments are included in [scripts](scripts).
+The shell(.sh) scripts for our experiments are included in [scripts](scripts).
  - Accuracy and efficiency experiment
   - This experiment is accuracy/efficiency comparisons of eight parallel algorithms.
   - Run all algorithms on the four real datasets when k is set to be 10,25, and 50.
