@@ -12,7 +12,7 @@ do
 		size=315086245
 	fi
 	if [ "$dataset" == "TeraClickLog150.csv" ]; then
-		size=4373472329
+		size=2186736164
 	fi
 	
 	for i in {1..5}
