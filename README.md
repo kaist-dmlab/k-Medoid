@@ -5,7 +5,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ##2. Algorithms
 - PAM-MR [1]
 - FAMES-MR [2]
-- CLARA-MR [3]
+- CLARA-MR' and CLARA-MR' [3]
 - GREEDI [4]
 - MR-KMEDIAN [5]
 - **PAMAE-Hadoop** : Hadoop implementation of our algorithm
@@ -71,9 +71,10 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  <img src="figures/FIG-GREEDI.png" width="250"> <img src="figures/FIG-MR-KMEDIAN.png" width="250"> <img src="figures/FIG-PAMAE.png" width="250"></br>
  Here, we can easily observe that other approaches suffer from local optima or insufficient size of sample problem. Only our algorithm success to find exact medoids of 10 clusters.
 
-##7. Experiment Procedure
+##7. Experiment
  - Accuracy and efficiency experiment (Figure 5 and 7)
-  - We 
+  - This experiment is accuracy/efficiency comparison of eight parallel algorithms for the four real datasets when k is set to be 10,25, and 50.
+  - The experiment script is included in [scripts](scripts).
  - Convergence experiment (Figure 8)
   - ddd
  - Scalability experiment (Figure 9)
