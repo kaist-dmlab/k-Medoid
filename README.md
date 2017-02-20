@@ -37,7 +37,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 - Compile
  - To compile the algorithms, the spark-assembly library is needed. It can be downloaded from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
- - Make _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [example](example) folder.
+ - Make _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [jar](jar) folder.
 - Create _Azure HDInsight_ instances
  - see [HDInsight Document]
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
