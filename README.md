@@ -28,23 +28,23 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 
 ##4. Configuration
  - We conducted experiments on 12 Microsoft Azure D12v2 instances loacted in Japan. 
- - Each instance has four cores, 28GB of main memory, and 200GB of disk(SSD). 
+ - Each instance has four cores, 28GB of main memory, and 200GB of disk (SSD). 
  - All instances run on Ubuntu 14.04. We used Hadoop 2.7.1 and Spark 1.6.1 for distributed parallel processing. 
  - Ten out of 12 instances were used as worker nodes, and the remaining two instances were used as master nodes. 
  - All the algorithms were written in the Java programming language and run on JDK 1.7.0_101.
 
 ##5. How to Run
 - Compile
- - To compile the algorithms, you need the spark-assembly library, which can be downloaded from [Apache Spark]. 
+ - Download the spark-assembly library from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
  - Make a _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [jar](jar) folder.
 - Create _Azure HDInsight_ instances.
- - See [HDInsight Document].
+ - Refer to [HDInsight Document].
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
 - Move the data sets into the _HDFS_ folder.
  - Download all data sets from the above links and move them to the _Azure master node_.
- - Transfer your data sets from _Azure master node_ into _HDFS_.</br>
-   **``hadoop dfs -put [your master node path] [hdfs path]``**
+ - Transfer your data sets from the _Azure master node_ into _HDFS_.</br>
+   **``hadoop dfs -put [your master node path] [hdfs path]``**</br>
 - Run the algirithms using the following command:
  - PAM-MR</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
@@ -69,7 +69,7 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - **The clustering results are shown in the figures below.** </br>
  <img src="figures/FIG-PAM-MR.png" width="270"> <img src="figures/FIG-FAMES-MR.png" width="270"> <img src="figures/FIG-CLARA-MR.png" width="270"></br>
  <img src="figures/FIG-GREEDI.png" width="270"> <img src="figures/FIG-MR-KMEDIAN.png" width="270"> <img src="figures/FIG-PAMAE.png" width="270"></br>
- Here, we can easily observe that other algorithms suffer from local optima or insufficient sample problems. Only our algorithm succeed to find the exact medoids of 10 clusters.
+ Here, we can easily observe that other algorithms suffer from local optima or insufficient sample problems. Only our algorithm succeeds to find the exact medoids of 10 clusters.
 
 ##7. Experiment
 The script(.sh) files for our experiments are included in [scripts](scripts).
@@ -87,7 +87,6 @@ The script(.sh) files for our experiments are included in [scripts](scripts).
   - **``sh ConvergenceExp.sh``**
  - **Figure 9**: Scalability experiment
   - This experiment is to scalability test using the TeraClickLog data set on Spark.
-  - Two storage-level options are used:</br>
-    MEMORY_ONLY and MEMORY_AND_DISK.
+  - Two storage-level options are used: MEMORY_ONLY and MEMORY_AND_DISK.
   - The result is [Figure 9](figures/figure_9.pdf) in our paper. 
   - **``sh ScalabilityExp.sh``**
