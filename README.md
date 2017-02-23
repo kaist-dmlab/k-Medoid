@@ -87,7 +87,7 @@ The script(.sh) files for our experiments are included in [scripts](scripts).
   - The result is [Figure 7](figures/figure_7.pdf) in our paper.
   - **``sh ConvergenceExp.sh``**
  - **Figure 9**: Scalability experiment
-  - This experiment is to scalability test using the TeraClickLog data set on Spark.
+  - This experiment is scalability test using the TeraClickLog data set on Spark.
   - Two storage-level options are used: MEMORY_ONLY and MEMORY_AND_DISK.
   - The result is [Figure 9](figures/figure_9.pdf) in our paper. 
   - **``sh ScalabilityExp.sh``**
