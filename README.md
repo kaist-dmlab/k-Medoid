@@ -34,13 +34,11 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
  - All the algorithms were written in the Java programming language and run on JDK 1.7.0_101.
 
 ## 5. How to Run
-- Compile
-  - Download the spark-assembly library from [Apache Spark]. 
-[Apache Spark]: http://spark.apache.org/downloads.html
+- Compile.
+  - Download the spark-assembly library from [Apache Spark](http://spark.apache.org/downloads.html).
   - Make a _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [jar](jar) folder.
 - Create _Azure HDInsight_ instances.
-  - Refer to [HDInsight Document].
- [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
+  - Refer to [HDInsight Document](https://docs.microsoft.com/en-us/azure/hdinsight/).
 - Move the data sets into the _HDFS_ folder.
   - Download all data sets from the above links and move them to the _Azure master node_.
   - Transfer your data sets from the _Azure master node_ into _HDFS_.</br>
@@ -57,9 +55,9 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]``**
   - MR-KMEDIAN</br>
   Iteraive Sampling</br>
-    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [# of objects]``**</br>
-   Weighted K-Median </br>
-    **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs sample path] [hdfs output path] [# of medoids] [# of cores]``**
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [# of objects]``**</br>
+  Weighted K-Median </br>
+  **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs sample path] [hdfs output path] [# of medoids] [# of cores]``**
   - PAMAE-Hadoop</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]``**
   - PAMAE-Spark</br>
