@@ -35,34 +35,34 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 
 ## 5. How to Run
 - Compile
- - Download the spark-assembly library from [Apache Spark]. 
+  - Download the spark-assembly library from [Apache Spark]. 
 [Apache Spark]: http://spark.apache.org/downloads.html
- - Make a _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [jar](jar) folder.
+  - Make a _jar file_ using IDE tools. For example, you can easily make it using Eclipse through **_project name->export->jar file_**. It is possible that you just download the jar files from [jar](jar) folder.
 - Create _Azure HDInsight_ instances.
- - Refer to [HDInsight Document].
+  - Refer to [HDInsight Document].
  [HDInsight Document]: https://docs.microsoft.com/en-us/azure/hdinsight/
 - Move the data sets into the _HDFS_ folder.
- - Download all data sets from the above links and move them to the _Azure master node_.
- - Transfer your data sets from the _Azure master node_ into _HDFS_.</br>
-   **``hadoop dfs -put [your master node path] [hdfs path]``**
+  - Download all data sets from the above links and move them to the _Azure master node_.
+  - Transfer your data sets from the _Azure master node_ into _HDFS_.</br>
+    **``hadoop dfs -put [your master node path] [hdfs path]``**
    
 - Run the algirithms using the following command:
- - PAM-MR</br>
+  - PAM-MR</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
- - FAMES-MR</br>
+  - FAMES-MR</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids]``**
- - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
+  - CLARA-MR' (type : 0), CLARA-MR (type : 1)</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of samples] [# of medoids] [type]``**
- - GREEDI</br>
+  - GREEDI</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of partitions] [# of medoids]``**
- - MR-KMEDIAN</br>
+  - MR-KMEDIAN</br>
   Iteraive Sampling</br>
     **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of medoids] [upsilon] [# of cores] [# of objects]``**</br>
    Weighted K-Median </br>
     **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs sample path] [hdfs output path] [# of medoids] [# of cores]``**
- - PAMAE-Hadoop</br>
+  - PAMAE-Hadoop</br>
   **``hadoop jar [jar file] [main class] [hdfs input path] [hdfs output path] [# of sampled objects] [# of samples] [# of medoids] [# of partition]``**
- - PAMAE-Spark</br>
+  - PAMAE-Spark</br>
   **``spark-submit --class [main class] [jar file] wasb://[hdfs address]/[hdfs input path] [# of medoids] [# of sampled objects] [# of samples] [# of partitions] [# of iteration for Phase II]``**
   
 ## 6. Example
@@ -75,19 +75,19 @@ The k-medoids algorithm is one of the best-known clustering algorithms. Despite 
 ## 7. Experiment
 The script(.sh) files for our experiments are included in [scripts](scripts).
  - **Figures 5 and 8**: Accuracy and efficiency experiment
-  - This experiment is accuracy/efficiency comparisons of eight parallel algorithms.
-  - Run all algorithms on the four real-world data sets when k is set to be 10, 25, and 50.
-  - The results are [Figure 5](figures/figure_5.pdf) and [Figure 8](figures/figure_8.pdf) in our paper.
-  - **``sh Hadoop-AccEffExp.sh``** and **``sh Spark-AccEffExp.sh``**
+   - This experiment is accuracy/efficiency comparisons of eight parallel algorithms.
+   - Run all algorithms on the four real-world data sets when k is set to be 10, 25, and 50.
+   - The results are [Figure 5](figures/figure_5.pdf) and [Figure 8](figures/figure_8.pdf) in our paper.
+   - **``sh Hadoop-AccEffExp.sh``** and **``sh Spark-AccEffExp.sh``**
  - **Figure 7**: Convergence experiment
-  - This experiment is to verify the convergence of Phase II.
-  - Three different seeding strategies are used for this experiment:</br>
-    (40+2k,5) by CLARA-MR', (100+5K) by CLARA-MR, and (40K,5) by Phase I of PAMAE.
-  - The number of iterations for Phase II is forced to increase from 1 to 10 when k is 50.
-  - The result is [Figure 7](figures/figure_7.pdf) in our paper.
-  - **``sh ConvergenceExp.sh``**
+   - This experiment is to verify the convergence of Phase II.
+   - Three different seeding strategies are used for this experiment:</br>
+     (40+2k,5) by CLARA-MR', (100+5K) by CLARA-MR, and (40K,5) by Phase I of PAMAE.
+   - The number of iterations for Phase II is forced to increase from 1 to 10 when k is 50.
+   - The result is [Figure 7](figures/figure_7.pdf) in our paper.
+   - **``sh ConvergenceExp.sh``**
  - **Figure 9**: Scalability experiment
-  - This experiment is scalability test using the TeraClickLog data set on Spark.
-  - Two storage-level options are used: MEMORY_ONLY and MEMORY_AND_DISK.
-  - The result is [Figure 9](figures/figure_9.pdf) in our paper. 
-  - **``sh ScalabilityExp.sh``**
+   - This experiment is scalability test using the TeraClickLog data set on Spark.
+   - Two storage-level options are used: MEMORY_ONLY and MEMORY_AND_DISK.
+   - The result is [Figure 9](figures/figure_9.pdf) in our paper. 
+   - **``sh ScalabilityExp.sh``**
